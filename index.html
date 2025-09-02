@@ -1,0 +1,809 @@
+<html>
+    <head>
+     <meta charset="UTF-8">
+  <title> medicalcare</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fleur+De+Leah&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    </head>
+    <body>
+
+
+<!-- <div class="frist-section"> -->
+<div class="frist-section" style="background-color:#193f4e;">
+   
+          <nav class="navbar navbar-expand-lg bg-transparent nav1" style="height: 70px;">
+  <div class="container-fluid header" style="height: 70px;">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo (2).jpg" alt="Logo" width="50" height="50"  class="d-inline-block align-text-top rounded-circle" >
+
+    </a>
+<h2 class="web-title">medical  <span>care </span></h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: #00a4a3; background-color: #d2ebf2;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Departments
+          </a>
+          <ul class="dropdown-menu" style="background-color: #ecebef;">
+            <li><a class="dropdown-item" href="#">Internal Medicine</a></li>
+            <li><a class="dropdown-item" href="#">OB-GYN</a></li>
+            <li><a class="dropdown-item" href="#">General Surgery</a></li>
+            <li><a class="dropdown-item" href="#">Emergency Medicine</a></li>
+             <li><a class="dropdown-item" href="#">Oncology</a></li>
+            <li><a class="dropdown-item" href="#"> Dermatology</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Neurology </a></li>
+          </ul>
+        </li>
+        <li class="nav-item">   <a class="nav-link" href="#">About us</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center gap-2" role="search">
+        <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search"/>
+        <button class=" btn btn-outline-success btn-sm" type="submit">Search</button>
+
+      <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal" style="width: 110px;">
+  Sign Up
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+  <h4 class="modal-title" style=" color:#00a4a3; ">Login To medical care Hospital</h4>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h2 style="font-size: 16; color:#adadad ;">Please login with your registered Email ID and 
+          Password to book an appointment with your doctor
+
+</h2>
+     <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="email" style=" color:#00a4a3; ">Email:</label>
+      <input type="email" class="form-control"  id="email" placeholder="Enter email" name="email"  style="background-color: #f2f2f2;">
+    </div>
+    <div class="mb-3">
+      <label for="pwd" style=" color:#00a4a3; ">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="background-color:#f2f2f2;">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn" style="background-color: #00a4a3; color: white;">Submit</button>
+  </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</nav>
+
+
+
+<!-- /////////////////////////////////////////////////////////slides///////////section2//////////////////////// -->
+
+
+<!-- Carousel -->
+ <div class="container-fluid slide-div" style="width: 100%; height: 87vh;">
+  <div id="demo" class="carousel slide h-100" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner h-100" style="width:100%;">
+      <div class="carousel-item active h-100" style="width:100%;  position: relative;">
+            <img src="images/1.jpg" class="d-block w-100 h-100" style="object-fit: cover" alt="Slide 1">
+
+             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              background-color: rgba(17, 101, 116, 0.4); z-index: 1;"></div>
+
+        <div class="carousel-caption" style="position: absolute; z-index: 10;">
+          <h3>Medical Laboratory 
+</h3>
+          <p>"Equipped to handle a large volume of tests, 
+            especially during outbreaks, chronic diseases, and emergency cases."
+
+</p>
+<button class="btn-slides"> More</button>
+        </div>
+      </div>
+
+      <div class="carousel-item h-100" style="width:100%; position: relative;">
+        <img src="images/2.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Los Angeles">
+
+         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              background-color: rgba(17, 101, 116, 0.4); z-index: 1;"></div>
+
+        <div class="carousel-caption"  style="position: absolute; z-index: 10;">
+          <h3> Family Medicine</h3>
+          <p> "healthcare for all family members of all ages, including prevention,
+             diagnosis, and treatment of both acute and chronic diseases"</p>
+             <button class="btn-slides"> More</button>
+        </div>
+      </div>
+
+      <div class="carousel-item h-100" style="width:100%; position: relative;">
+        <img src="images/3.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Los Angeles">
+         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              background-color: rgba(17, 101, 116, 0.4); z-index: 1;"></div>
+
+        <div class="carousel-caption"  style="position: absolute; z-index: 10;">
+          <h3>Surgery</h3>
+          <p>" the most precise instruments and the latest technologies, supported by
+             a specialized team of doctors and nursing staff, to achieve surgical success rates of up to 100%."
+
+</p>
+<button class="btn-slides"> More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"  style="position: absolute; z-index: 10;">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"  style="position: absolute; z-index: 10;">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</div>
+
+</div>
+<!-- </div> -->
+
+<div class="container-fluid container-tooltip pt-4 ps-3 mt-3" style="background-color: #dddada; color: #163d4c;  height: 220px;">
+  <h3 style="margin-top: 10px;">About Us</h3>
+  <p>Since our inception in 1949, we have a legacy 
+    of excellence. We are a family hospital fully dedicated
+     to caring for the needs of the patients, communities, 
+     and Kingdom we serve to keep healthy.
+      Almana believes in offering compassionate care,
+     inspired by family values which ...</p>
+  
+             
+  <button type="button" class="btn btn-about " data-bs-toggle="modal" data-bs-target="#myModal"   style="background-color:#163d4c ; 
+  color: #f2f2f2; margin-top: 5px; box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.986);">
+   Read More
+  </button>
+</div>
+<hr>
+
+<!-- ////////////////////////////////////////////////////////colllaps section3///////////////////////////// -->
+ <div class="section3  mt-3" style=" height: 400px; background-color: #edf5f7;">
+   <div class="section3-h2 mt-4" style= "  width: 700px;
+      margin: auto;
+      border-radius: 20px;
+      text-align: center;
+      height: 70px;
+      background-color: #163d4c;
+      color: #f2f2f2;
+      padding: 10px;
+      box-shadow: 2px 2px 8px rgba(232, 244, 248, 0.637);
+      overflow: hidden;
+    ">
+    
+  <h2 >
+Healthcare Hospital's Medicine Department</h2>
+ </div>
+<div class="container mt-4">
+ 
+  <div id="accordion">
+    <div class="card mb-1  " style="width: 1120;">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+       Emergency
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+       hat's why our Emergency Department (ED) is staffed 24/7 by a 
+       team of highly skilled and experienced emergency
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1"style="width: 1120;">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+       
+Anesthesiology
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+        our expert anesthesiologists prioritize your comfort and safety during surgery.
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1" style="width: 1120;">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+   Pathology 
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body ">
+        we understand the importance of accurate diagnosis for effective treatment.
+         Our state-of-the-art Pathology & Laboratory 
+        department plays a vital role in supporting our physicians
+      </div>
+    </div>
+  </div>
+</div>  
+</div>
+
+<!-- ///////////////////////section 4 /////////////////////////////////// -->
+
+<!-- section4-frist div  -->
+<div class="container-fluid pt-3 mt-5" style="background-color: #e0e4df; height: 280px; border-radius: 20px; ">
+  <div class="h2-entry text" style="text-align: center; height: 70px; color: #005469; display: flex;
+  justify-content: center;
+  align-items: center; box-shadow: 2px 2px 8px rgba(128, 167, 179, 0.637);width: 700px; margin: auto;border-radius: 20px;  ">
+  <h2>
+Remote medical consultation</h2>
+  </div>
+  <p style="margin-top: 20px; color: #005469;">Write your brief question and you will be answered by a specialist doctor:</p>
+  <form action="/action_page.php">
+    <div class="form-floating mb-3 mt-1">
+      <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+      <label for="comment">Enter your question</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+</div>
+<hr>
+
+<!-- section4/fsecound div -->
+<div class="container-fluid pt-3" style="background-color: #e0e4df; height: 280px;  border-radius: 20px;">
+  <div class="h2-entry text" style="text-align: center; height: 70px; color: #005469; display: flex;
+  justify-content: center;
+  align-items: center; box-shadow: 2px 2px 8px rgba(128, 167, 179, 0.637);width: 700px; margin: auto
+  ;border-radius: 20px;  ">
+  <h2>
+Book your appointment now
+</h2>
+  </div>
+  <p style="margin-top: 20px; color: #005469;">Choose the medical specialty you need and we'll help you book:</p>
+  <form action="/action_page.php">
+   
+    <div class="dropdown ">
+  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+Choose specialization
+  </button>
+  <ul class="dropdown-menu" style="background-color: #f5f4f4;">
+    <li><a class="dropdown-item" href="#">Cardiologist</a></li>
+    <li><a class="dropdown-item" href="#"> Neurologist</a></li>
+    <li><a class="dropdown-item" href="#">Dermatologist</a></li>
+     <li><a class="dropdown-item" href="#"> Pediatrician</a></li>
+    <li><a class="dropdown-item" href="#">Orthopedic Surgeon</a></li>
+    <li><a class="dropdown-item" href="#">Obstetrician (OB-GYN)</a></li>
+
+  </ul>
+</div>
+    <button type="submit" class="btn btn-primary mt-5">Send</button>
+  </form>
+</div>
+<hr>
+<!-- section4////third div -->
+<div class="container-fluid pt-3 " style="background-color: #e0e4df; height: 280px;  border-radius: 20px;">
+  <div class="h2-entry text" style="text-align: center; height: 70px; color: #005469; display: flex;
+  justify-content: center;
+  align-items: center; box-shadow: 2px 2px 8px rgba(128, 167, 179, 0.637);width: 700px; margin: auto;border-radius: 20px;  ">
+  <h2>
+ Suggestions and Complaints </h2>
+  </div>
+  <p style="margin-top: 20px; color: #005469;">We are honored to provide the highest quality and most accurate service</p>
+  <form action="/action_page.php">
+    <div class="form-floating mb-3 mt-1">
+      <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+      <label for="comment"> Please write any complaint here</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+</div>
+<hr>
+<!-- ////////////////////////////////////section5 img -->
+ <section class="text-white p-5 mt-2" style="background-image: url('images/medium-shot-scientists-posing-together.jpg');background-attachment: fixed; background-size: cover; background-position: center; height: 400px;" >
+ 
+</section>
+
+<div class="div-section6 mt-3" style="text-align: center; height: 70px; background-color:#163d4c ;
+ color: #f2f2f2; display: flex;
+  justify-content: center;
+  align-items: center; box-shadow: 2px 2px 8px rgba(128, 167, 179, 0.637); margin: auto
+  ;border-radius: 20px;  ">
+  <h2 class="fields">
+   Plastic Surgery and Laser Department
+  </h2>
+</div>
+
+
+<!-- /////////////////// اول ي 3 كروت/////////////////////////////////////////////////////////////////-->
+ <div class="surgery-cards container-fluid" style="display: flex; justify-content: space-between;">
+<!-- 1////// -->
+<div class=" mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/dentist-doing-check-up-patient.jpg" alt="Card image ">
+    <div class="card-body">
+      <h4 class="card-title">ENT Surgery (Otolaryngology)</h4>
+      <p class="card-text">  surgery on ear, nose, and throat regions</p>
+      <a href="#" class="btn btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  
+  </div>
+<!-- /////2 -->
+<div class=" mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/using-cut-out-lifestyle-urban-uniform.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">Neurosurgery</h4>
+      <p class="card-text">surgery on the brain and nervous system</p>
+      <a href="#" class="btn btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  
+  </div>
+<!-- /////////3 -->
+  <div class=" mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/surgeons-passing-scissors-each-other.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">Cardiac Surgery  </h4>
+      <p class="card-text">surgery on the heart  and blood vessels</p>
+      <a href="#" class="btn btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  </div>
+  </div>
+<br>
+<!-- تاني  3 كروت/////////////////////////// -->
+<div class="surgery-cards container-fluid" style="display: flex; justify-content: space-between;">
+<!-- ////////1 -->
+<div class=" mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/FRIST card.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">Septoplasty</h4>
+      <p class="card-text">Septoplasty and nasal bone fractures</p>
+      <a href="#" class="btn btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  
+  </div>
+<!-- ///////////2 -->
+<div class="large-card mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/close-up-needle-hands-physiotherapist-doing-dry-needling.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">Laser burn scars</h4>
+      <p class="card-text">Overcoming the effects of surgeries and burns</p>
+      <a href="#" class="btn  btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  
+  </div>
+<!-- /////3 -->
+  <div class=" mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/doctors-doing-surgical-procedure-patient.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">General Surgery</h4>
+      <p class="card-text">surgery on abdominal organs like stomach</p>
+      <a href="#" class="btn  btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  </div>
+  </div>
+<br>
+<!-- ///تالت  3 كروت  -->
+  <div class="surgery-cards container-fluid" style="display: flex; justify-content: space-between;">
+<!-- 1////// -->
+<div class=" mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/dentist-doing-check-up-patient.jpg" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">ENT Surgery (Otolaryngology)</h4>
+      <p class="card-text">  surgery on ear, nose, and throat regions</p>
+      <a href="#" class="btn btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  
+  </div>
+<!-- /////2 -->
+<div class=" mt-3">
+  <div class="card card-image" style="width:400px">
+    <img class="card-img-top" src="../project3/images/using-cut-out-lifestyle-urban-uniform.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">Neurosurgery</h4>
+      <p class="card-text">surgery on the brain and nervous system</p>
+      <a href="#" class="btn btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  
+  </div>
+<!-- /////////3 -->
+  <div class=" mt-3">
+  <div class="card card-image" style="width:400px ;">
+  <img class="card-img-top" src="../project3/images/surgeons-passing-scissors-each-other.jpg" alt="Card image" > 
+    <div class="card-body">
+      <h4 class="card-title">Cardiac Surgery  </h4>
+      <p class="card-text">surgery on the heart  and blood vessels</p>
+      <a href="#" class="btn btn-primary btncard">More</a>
+    </div>
+  </div>
+ 
+  
+  </div>
+  </div>
+<br>
+
+<!-- ///////////////////section6///////////////////////img///////////////////////// -->
+<hr>
+ <section class="text-white p-5 mt-2" style="background-image: url('images/medical-banner-with-doctor-wearing-equipment.jpg');background-attachment: fixed; background-size: cover; background-position: center; height: 400px;" >
+ 
+</section>
+<div class="div-section6 mt-3" style="text-align: center; height: 70px; background-color:#163d4c ;
+ color: #f2f2f2; display: flex;
+  justify-content: center;
+  align-items: center; box-shadow: 2px 2px 8px rgba(128, 167, 179, 0.637); margin: auto
+  ;border-radius: 20px;  ">
+  <h2 class="fields">
+  All thanks and appreciation
+  </h2>
+</div>
+<!-- ////// frist one appreciate  -->
+<div  class="appreciation-div container-fluid" style="display:flex ; justify-content: space-between;">
+  <div class="card img-fluid mt-3 card-appreciation" style="width:400px; height: 490; position: relative;">
+    
+    <img class="card-img-top " src="../project3/images/medicine-uniform-healthcare-medical-workers-day-concept.jpg" alt="Card image" style="width:100% ; height: 100%; opacity: 0.5;">
+    <div class="overlay-img"></div>
+    <div class="card-img-overlay" style="display: flex;
+  justify-content:space-between; flex-direction: column; ">
+  <div class="div-fristtext-appre">
+      <h4 class="card-title txt-appre">
+ Department of Laparoscopic Surgery</h4>
+      <p class="card-text card-appre"><time datetime> <i class="fas fa-clock"></i> 2025-07-27 </time></p>
+    </div>
+     <div class="div-sectext-appre">
+        <img src="images/portrait-professional-medical-worker-posing-picture-with-arms-folded.jpg" class="rounded-circle" alt="Cinque Terre" width="104" height="136"> 
+      <h4 class="card-title txt-appre"> Dr. Ahmed Mahmoud</h4>
+      <p class="card-text card-appre">Head of the Department of Internal Medicine and Laparoscopic Surgery</p>
+    </div>
+
+
+     
+    </div>
+  </div>
+  <!-- ////// second one appreciate  -->
+
+ <div class="card img-fluid mt-3 card-appreciation" style="width:400px; height: 490;  position: relative;">
+      <img class="card-img-top" src="../project3/images/medicine-uniform-healthcare-medical-workers-day-concept.jpg" alt="Card image" style="width:100% ; opacity: 0.5; height: 100%;">
+      <div class="overlay-img"></div>
+    <div class="card-img-overlay" style="display: flex;
+  justify-content:space-between; flex-direction: column;">
+  <div class="div-fristtext-appre">
+      <h4 class="card-title txt-appre">
+Department of Obstetrics and Gynecology</h4>
+      <p class="card-text card-appre"><time datetime> <i class="fas fa-clock"></i> 2025-07-27 </time></p>
+    </div>
+     <div class="div-sectext-appre">
+        <img src="images/beautiful-young-female-doctor-looking-camera-office.jpg" class="rounded-circle" alt="Cinque Terre" width="104" height="136"> 
+      <h4 class="card-title txt-appre"> Dr. Nawal Mahmoud</h4>
+      <p class="card-text card-appre">Head of the Department of Obstetrics and Gynecology</p>
+    </div>
+
+
+     
+    </div>
+  </div>
+  <!-- //////third one appreciate  -->
+   <div class="card img-fluid mt-3 card-appreciation" style="width:400px;height: 490;  position: relative;">
+    <img class="card-img-top" src="../project3/images/medicine-uniform-healthcare-medical-workers-day-concept.jpg" alt="Card image" style="width:100% ;  height:100% ;opacity: 0.5;">
+     <div class="overlay-img"></div>
+   <div class="card-img-overlay" style="display: flex;
+  justify-content:space-between; flex-direction: column;">
+  <div class="div-fristtext-appre">
+      <h4 class="card-title txt-appre">
+Department of Analysis and Radiolog</h4>
+      <p class="card-text card-appre"><time datetime> <i class="fas fa-clock"></i> 2025-07-27 </time></p>
+    </div>
+     <div class="div-sectext-appre">
+        <img src="images/female-doctor-hospital-with-stethoscope.jpg" class="rounded-circle" alt="Cinque Terre" width="104" height="136"> 
+      <h4 class="card-title txt-appre"> Dr. Laila Ali
+</h4>
+      <p class="card-text card-appre">Head of the Department of Analysis and Radiolog</p>
+    </div>
+
+
+     
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- ////////////////////////////section7 //////////////////-->
+<!-- الاولي  -->
+<hr>
+ <div class="container-fluid p-0 mt-4" style="height: 300px; background-color:#f7f7f7;">
+  <div class="row g-0 h-100 shadow rounded overflow-hidden">
+    
+    <!-- الجزء الخاص بالصورة -->
+    <div class="col-md-6 h-100">
+      <img src="images/11.jpg"
+           class="w-100 h-100 object-fit-cover  clipped-img"
+           alt="Podcast Image" />
+    </div>
+
+    <!-- الجزء الخاص بالنص -->
+    <div class="col-md-6  d-flex flex-column justify-content-center p-5" style="background-color: #f7f7f7;" >
+      <h3 class="fw-bold">Nursing Team</h3>
+      <p class="text-muted mb-2">
+        <i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020
+      </p>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        fugiat asperiores inventore...
+      </p>
+      <button class="btn btn-outline-primary">Play Episode</button>
+    </div>
+
+  </div>
+</div>
+<br>
+<hr>
+
+<!-- الثانيه  -->
+ <div class="container-fluid p-0 mt-4" style="height: 300px;  background-color:#f7f7f7;">
+  <div class="row g-0 h-100 shadow rounded overflow-hidden">
+    
+    <!-- الجزء الخاص بالنص -->
+    <div class="col-md-6 d-flex flex-column justify-content-center p-5">
+      <h3 class="fw-bold">Outpatient Clinics</h3>
+      <p class="text-muted mb-2">
+        <i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020
+      </p>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        fugiat asperiores inventore...
+      </p>
+      <button class="btn btn-outline-primary">Play Episode</button>
+    </div>
+<!-- الجزء الخاص بالصورة -->
+    <div class="col-md-6 h-100">
+      <img src="images/22.jpg"
+           class="w-100 h-100 object-fit-cover  clipped-imgs"
+           alt="Podcast Image" />
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+<!-- الثالثه   -->
+
+ <div class="container-fluid p-0 mt-4" style="height: 300px;  background-color:#f7f7f7;">
+  <div class="row g-0 h-100 shadow rounded overflow-hidden">
+    
+    <!-- الجزء الخاص بالصورة -->
+    <div class="col-md-6 h-100">
+      <img src="images/33.jpg"
+           class="w-100 h-100 object-fit-cover  clipped-img"
+           alt="Podcast Image" />
+    </div>
+
+    <!-- الجزء الخاص بالنص -->
+    <div class="col-md-6  d-flex flex-column justify-content-center p-5">
+      <h3 class="fw-bold">Isolation Rooms</h3>
+      <p class="text-muted mb-2">
+        <i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020
+      </p>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        fugiat asperiores inventore...
+      </p>
+      <button class="btn btn-outline-primary">Play Episode</button>
+    </div>
+
+  </div>
+</div>
+<br>
+<hr>
+<!-- الرابعه  -->
+ <div class="container-fluid p-0 mt-4" style="height: 300px;  background-color:#f7f7f7;">
+  <div class="row g-0 h-100 shadow rounded overflow-hidden">
+    
+    
+
+    <!-- الجزء الخاص بالنص -->
+    <div class="col-md-6 d-flex flex-column justify-content-center p-5">
+      <h3 class="fw-bold">Equipped Rooms</h3>
+      <p class="text-muted mb-2">
+        <i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020
+      </p>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        fugiat asperiores inventore...
+      </p>
+      <button class="btn btn-outline-primary">Play Episode</button>
+    </div>
+<!-- الجزء الخاص بالصورة -->
+    <div class="col-md-6 h-100">
+      <img src="images/44.jpg"
+           class="w-100 h-100 object-fit-cover  clipped-imgs"
+           alt="Podcast Image" />
+    </div>
+  </div>
+</div>
+
+<br>
+<hr>
+<div class="section8 container-fluid" style="background-color: #00a4a3; height: 50px;">
+<h2 class="h2-section8" style="text-align: center;padding-top:10px; color: white; font-size: 26;"> Get in Touch</h2>
+
+</div>
+<div class="container-fluid my-4">
+  <div class="row g-4">
+    
+    <!-- واتساب -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow p-3 h-100 text-center">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <i class="fab fa-whatsapp fa-3x text-success mb-3"></i>
+          <h5 class="card-title">WhatsApp</h5>
+          <span class="badge bg-success mb-2">Chat Now</span>
+          <button class="btn btn-outline-success btn-sm">Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- فيسبوك -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow p-3 h-100 text-center">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <i class="fab fa-facebook fa-3x text-primary mb-3"></i>
+          <h5 class="card-title">Facebook</h5>
+          <span class="badge bg-primary mb-2">Join Us</span>
+      <button class="btn btn-outline-success btn-sm">Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- يوتيوب -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow p-3 h-100 text-center">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <i class="fab fa-youtube fa-3x text-danger mb-3"></i>
+          <h5 class="card-title">YouTube</h5>
+          <span class="badge bg-danger mb-2">Watch Now</span>
+         <button class="btn btn-outline-success btn-sm">Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- تويتر -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow p-3 h-100 text-center">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <i class="fab fa-twitter fa-3x text-info mb-3"></i>
+          <h5 class="card-title">Twitter</h5>
+          <span class="badge bg-info mb-2">Follow Us</span>
+         <button class="btn btn-outline-success btn-sm">Follow</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class=" text-light pt-5 pb-4" style="background-color: #163d4c;">
+  <div class="container">
+    <div class="row">
+
+      <!-- العمود الأول -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5 class="fw-bold">About Us</h5>
+        <p class="small">
+          We are a healthcare center providing high-quality medical services
+          with a dedicated team of professionals.
+        </p>
+      </div>
+
+      <!-- العمود الثاني -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود الثالث -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5 class="fw-bold">Contact Us</h5>
+        <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i>123 Main Street, City</p>
+        <p class="small mb-1"><i class="fas fa-phone me-2"></i>+20 123 456 789</p>
+        <p class="small"><i class="fas fa-envelope me-2"></i>info@example.com</p>
+      </div>
+
+    </div>
+
+    <!-- خط في الأسفل -->
+    <div class="text-center mt-4 border-top pt-3">
+      <p class="mb-0 small">&copy; 2025 safaazaitoun. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+ <div class="social-sidebar">
+  <a href="https://wa.me/201234567890" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+201234567890" class="phone">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="https://facebook.com" target="_blank" class="facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </body>
+</html>

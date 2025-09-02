@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+     body {
+    font-family: 'Cairo', sans-serif;
+  }
+
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+ right: 0; /* لو عايزاها يمين خليها right: 0; */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.social-sidebar a {
+  background: #6389949d;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 8px 8px 0;
+  text-decoration: none;
+  font-size: 22px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.social-sidebar a:hover {
+  transform: scale(1.1);
+}
+
+.social-sidebar a.whatsapp { color: #25D366; }
+.social-sidebar a.phone    { color: #007BFF; }
+.social-sidebar a.facebook { color: #1877f2; }
+
+
+
+
+.header{
+    background-color:rgba(23,62,77,255);
+        text-transform: capitalize !important;
+
+
+  margin-bottom: 0;
+}
+
+.web-title{
+    color: #c7dcdf;
+    text-transform: capitalize;
+
+}
+.header-nav{
+    margin-left: 20px;
+}
+.header-nav .nav-link {
+  color: #d2ebf2;
+
+}
+.header-nav .nav-link.active{
+    color:#00a4a3 !important;
+}
+.header-nav .nav-link:focus{
+   color:#00a4a3 !important;
+}
+.header-nav .nav-link:hover{
+   color:#00a4a3 !important;
+}
+
+
+.d-flex .btn-outline-success {
+  border-color: #00a4a3 !important;
+  color: #ffffff !important;
+  background-color: #00a4a3;
+}
+
+.d-flex .btn-outline-success:hover {
+  border-color: #d2ebf2 !important;
+  background-color: #00a4a3 !important;
+color: white;
+}
+
+/* .carousel-inner, .carousel-item, .carousel-item img {
+      height: 100vh;
+      width: 100vw;
+    }
+    .carousel-item img {
+      object-fit: contain; /* الصورة تملأ المساحة وتقص إذا لازم */
+    
+   
+
+    .navbar.bg-body-tertiary {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* ألغِ أي مسافة تحت الناف */
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+/* ألغِ المسافة بين الهيدر والسلايد */
+.frist-section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.btn-slides{
+background-color:#00a4a3;
+ color: white;
+  border: none; 
+  width: 70px;height: 30px; 
+  border-radius: 10px;}
+
+  .btn-slides:hover{
+ transform:scale(1.05,1.05);
+  transition: all 0.3s ease;
+  }
+
+ 
+
+.icon-link {
+  font-size: 28px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block; /* مهم لتأثير transform */
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+/* ////////sectio3 */
+.section3{
+
+
+padding-top: 5px;
+}
+
+
+.card-header .btn {
+  background-color: #e7ebeb !important;
+color: #00a4a3;
+}
+
+/* #accordion .card {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease  !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7) !important;  /* ظل خفيف افتراضي */
+
+
+ .card-body {
+   background-color:#e7ebeb;  } */
+
+/* لما المحتوى مفتوح */
+.collapse.show .card-body {
+  background-color: #1e9c9c;  }
+
+  .btn-about{
+ box-shadow: 2px 2px 8px rgba(167, 176, 179, 0.555) !important;
+  }
+
+
+  /* ////////////////////////////سيكشن 5 الكروت ///////////////////////////// */
+
+
+
+
+.card-image {
+  width: 400px;
+  height: 450px !important;
+  overflow: hidden;
+  background-color: #edf5f7;
+border: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* ظل الكارت */
+}
+.card-image img {
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover;
+  display: block;
+
+}
+/* حاوية الصورة */
+ 
+
+/* الصورة نفسها */
+/* .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+} */
+.btncard{
+ 
+  width: 200px !important;
+  margin: auto;
+}
+
+.card-body {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 200;
+}
+
+/* .card-image::before, */
+.card-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(62, 113, 122, 0.4);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 0.8s ease, transform 0.8s linear;
+  pointer-events: none;
+    transform: translateY(-100%); /* نبدأ من بره فوق */
+}
+
+
+
+
+
+.card-image:hover::after {
+  opacity: 1;
+ transform: translateY(0);
+}
+
+.card-title{
+color: #0e353f !important;
+}
+      .card-text{
+color: rgb(147, 166, 167) !important;
+      }
+
+      .card-body{
+        background-color: #edf5f7 !important ;
+      }
+
+    .overlay-img{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(67, 130, 141, 0.4); 
+    z-index: 1;
+    }
+    .overlay-img:hover{
+      background-color: rgba(86, 177, 207, 0.555);
+    }
+    .card-img-overlay{
+      padding: 15px;
+    z-index: 8;
+    position: relative;
+    color: white !important;
+    }
+
+    .txt-appre:hover{
+color: #e0e9e9 !important;
+    }
+
+    .card-appre{
+      color: rgb(232, 238, 240) !important;
+    }
+    .card-appreciation:hover
+    {
+      transform: scale(0.9);
+       transition: transform 0.3s linear;
+    }
+
+
+    .pic-div{
+      background-color: #2f1544;
+   
+     
+    }
+    .clipped-img {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+    .clipped-imgs {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+  .section8{
+    border-radius: 8px ;
+  }  
+  .card:hover {
+      transform:scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: all 2s linear;
+    }
